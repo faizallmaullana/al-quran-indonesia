@@ -1,4 +1,7 @@
 # Logs
+main
+main.exe
+
 logs
 *.log
 npm-debug.log*
