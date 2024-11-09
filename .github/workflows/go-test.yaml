@@ -21,11 +21,11 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v3
         with:
-          go-version: '1.20'  # Adjust to the version of Go you're using
+          go-version: '1.22'
 
       - name: Run Go build
         run: go build -o main .
-        working-directory: ./  # If Go code is in the root directory
+        working-directory: ./  
 
       - name: Display Go build status
         run: echo "🍏 Go build job status is ${{ job.status }}."
