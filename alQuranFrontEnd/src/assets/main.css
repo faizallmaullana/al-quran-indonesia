@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Amiri-Bold';
+  src: url('@/assets/fonts/Amiri/Amiri-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Amiri';
+  src: url('@/assets/fonts/Amiri/Amiri-Regular.ttf');
+}

@@ -3,16 +3,13 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
-      fontFamily: {
-        rubik: ['Rubik', 'sans serif'],
-      },
-      colors: {
-        myorange: '#243c5a',
+      backgroundImage: {
+        pattern: "url('@/components/imgs/vector.svg')",
       },
     },
+    variants: {
+      extend: {},
+    },
+    plugins: [],
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
 }
