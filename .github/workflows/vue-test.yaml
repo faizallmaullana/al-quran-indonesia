@@ -1,0 +1,37 @@
+name: Vue.js CI
+
+on: 
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+    branches:
+      - develop
+      - main
+
+jobs:
+  Vue-CI:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./alQuranFrontEnd
+
+      - name: Run build
+        run: npm run build
+        working-directory: ./alQuranFrontEnd
+
+      - name: List files in the repository
+        run: ls ${{ github.workspace }}/alQuranFrontEnd
+
+      - run: echo "🍏 This job's status is ${{ job.status }}."
