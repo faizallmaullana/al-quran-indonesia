@@ -9,7 +9,7 @@ build-node:
 	cd alQuranFrontEnd && npm run build
 
 build-go:
-	go build -o .
+	go build -o main .
 
 npm-install:
 	cd alQuranFrontEnd && npm install
